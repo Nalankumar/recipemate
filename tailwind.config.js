@@ -4,7 +4,12 @@ export default {
     './index.html'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'background' : '#EAE8FF',
+        'spacecadet' : '#25283D',
+      }
+    },
   },
   plugins: [],
 }
