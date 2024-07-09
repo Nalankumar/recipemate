@@ -6,8 +6,8 @@ export default {
   theme: {
     extend: {
       colors:{
-        'background' : '#EAE8FF',
-        'spacecadet' : '#25283D',
+        'background' : '#FFFFCB',
+        'button' : '#159A9C',
       }
     },
   },
