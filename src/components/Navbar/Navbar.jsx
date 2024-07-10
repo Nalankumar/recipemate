@@ -5,7 +5,7 @@ import Menuitems from './Menuitems'
 export default function Navbar(){
     const [isOpen, setIsOpen] = useState(false);
     return(
-        <nav className="w-full flex justify-between align-middle px-[3dvw] border-b-silver-200 lg:h-[80px]">
+        <nav className="fixed w-full flex justify-between items-center px-[3dvw] border border-b-[2px] lg:h-[80px] bg-navbarbg">
             <Logo />
             <div>
             <button className='sm:block lg:hidden' onClick={()=> setIsOpen(!isOpen)}>
@@ -15,7 +15,6 @@ export default function Navbar(){
                     <Menuitems isOpen={isOpen}/>
             }
             </div>
-            
         </nav>
     )
 }

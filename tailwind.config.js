@@ -7,6 +7,7 @@ export default {
     extend: {
       colors:{
         'background' : '#FFFFCB',
+        'navbarbg': '#FFFFDB'
         'button' : '#159A9C',
       }
     },
