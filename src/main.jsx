@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+<<<<<<< HEAD
 // import {createBrowserRouter,
 //   RouterProvider,
 //   Route,
@@ -15,6 +16,8 @@ import App from './App.jsx'
 //     },
 //   ],
 // )
+=======
+>>>>>>> f964496087ede9d4a821654ed88865ba50668143
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
