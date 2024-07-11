@@ -1,9 +1,11 @@
-import './style.css'
+import Heropage from './components/Heropage/Heropage'
+import Navbar from './components/Navbar/Navbar'
 function App() {
   return (
-    <>
-      <h1 className="text-red-900 border">Recipemate</h1>  
-    </>
+    <div className="w-full h-[100vh] bg-background">
+    <Navbar />
+    <Heropage />
+    </div>
   )
 }
 

@@ -4,7 +4,13 @@ export default {
     './index.html'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'background' : '#FFFFCB',
+        'navbarbg': '#FFFFDB',
+        'button' : '#159A9C',
+      }
+    },
   },
   plugins: [],
 }
