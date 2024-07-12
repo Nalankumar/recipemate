@@ -1,5 +1,5 @@
-import Heropage from './components/Heropage/Heropage'
-import Navbar from './components/Navbar/Navbar'
+import Heropage from '../components/Heropage/Heropage'
+import Navbar from '../components/Navbar/Navbar'
 function App() {
   return (
     <div className="w-full h-[100vh] bg-background">
