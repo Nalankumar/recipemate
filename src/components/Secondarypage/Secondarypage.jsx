@@ -1,9 +1,9 @@
 import Image from "./Image";
-import image from '../../assets/curry_rice.jpg'
+import image from '../../assets/biriyani.jpg'
 import Button from '../Button'
-export default function Secondarypage(){
+export default function Heropage(){
     return(
-        <div className='flex flex-col justify-evenly items-center h-[100vh] lg:flex-row'>
+        <div className='flex flex-col justify-evenly items-center h-[100vh] lg:flex-row-reverse'>
             
             <Image source={image}/>
             <div className="flex flex-col items-center gap-3">
