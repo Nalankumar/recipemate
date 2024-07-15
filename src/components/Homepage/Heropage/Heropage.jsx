@@ -1,6 +1,6 @@
 import Image from "./Image";
-import image from '../../assets/curry_rice.jpg'
-import Button from '../Button'
+import image from '../../../assets/curry_rice.jpg'
+import Button from '../../Button'
 export default function Secondarypage(){
     return(
         <div className='flex flex-col justify-evenly items-center h-[100vh] lg:flex-row'>
