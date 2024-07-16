@@ -1,24 +1,27 @@
 import Card from './Card'
-export default function Carosaul(){
+export default function Carosaul({recipes}){
     return (
         <div className="carousel rounded-box *:p-[10px]">
-            <div className="carousel-item">
+            {/* <div className="carousel-item">
                 <Card />
+            </div> */}
+            <div className="carousel-item">
+                <Card
+                src=""
+                name="Burger" 
+                desc = "desc"/>
             </div>
             <div className="carousel-item">
-                <img
-                src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
-                alt="Burger" />
-            </div>
-            <div className="carousel-item">
-                <img
+                <Card
                 src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-                alt="Burger" />
+                name="Burger" 
+                desc = "desc" />
             </div>
             <div className="carousel-item">
-                <img
+                <Card
                 src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
-                alt="Burger" />
+                name="Burger"
+                desc="desc" />
             </div>
             <div className="carousel-item">
                 <img

@@ -1,17 +1,12 @@
-import Button from '../Button'
-
 export default function Menuitems({isOpen}){
     return(
-        <ul className={isOpen?"menu menu-vertical bg-base-200 rounded-box w-56  md:px-[5vw] md:menu-horizontal":"hidden menu bg-base-200 rounded-box w-56 md:px-[5vw] menu-horizontal md:menu-vertical"}>
-                <li><a>Home</a></li>
-                <li><a>Recipes</a></li>
-                <li><Button content="Log in"></Button></li>
-            </ul>
-    // <div className={isOpen?"flex flex-col md:flex md:flex-row md:px-[5vw]":'hidden md:flex md:flex-row md:px-[5vw]'}>
-    //     <a className={isOpen?'py-[2vh] md:px-[5vw]':'md:flex md:px-[5vw]'}>Recipes</a>
-    //     <a className={isOpen?'py-[2vh] md:px-[5vw]':'md:flex md:px-[5vw]'}>Home</a>
-    //     <Button className={isOpen?'py-[2vh] md:px-[5vw]':' md:flex md:px-[5vw]'} content="Log in"></Button>
-    // </div>
+        <ul className={isOpen?"menu menu-vertical rounded-box w-56 md:navbar md:w-[70%] md:navbar-center":"hidden menu rounded-box w-56 md:block md:navbar"}>
+            <li className="md:px-[5vw]"><a>Home</a></li>
+            <li className="md:px-[5vw]"><a>Recipes</a></li>
+            <li className="md:px-[5vw]">
+                <button className="btn btn-primary w-fit">Log in</button>
+            </li>
+        </ul>
     )
     
 }
