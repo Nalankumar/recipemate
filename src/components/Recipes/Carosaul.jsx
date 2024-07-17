@@ -1,13 +1,21 @@
 import Card from './Card'
+import PropTypes from 'prop-types'
 export default function Carosaul({recipes}){
+    if(!recipes) return null;
     return (
+
         <div className="carousel rounded-box *:p-[10px]">
             {/* <div className="carousel-item">
                 <Card />
             </div> */}
+            {
+                recipes.map(recipe => {
+                    return <Card name={recipe.title} src={recipe.image} desc={recipe.summary} ></Card>
+                })
+            }
             <div className="carousel-item">
                 <Card
-                src=""
+                // src={recipes[0].image}
                 name="Burger" 
                 desc = "desc"/>
             </div>
@@ -41,3 +49,7 @@ export default function Carosaul({recipes}){
         </div>
     )
 }
+
+Carosaul.propTypes = {
+    recipes: PropTypes.any  
+};

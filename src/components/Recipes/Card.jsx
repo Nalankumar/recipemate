@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'
 export default function Card({name, src, desc}){
     return (
         <div className="card bg-base-100 w-30 shadow-xl">
@@ -17,4 +17,8 @@ export default function Card({name, src, desc}){
             </div>
         </div>
     )
+}
+
+Card.PropTypes = {
+    image: PropTypes.string
 }
