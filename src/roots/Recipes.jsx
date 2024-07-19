@@ -3,7 +3,7 @@ import Carosaul from "../components/Recipes/Carosaul.jsx"
 import axios from 'axios'
 import {data} from '../data/data.js'
 import { useEffect } from "react"
-import Card from "../components/Recipes/Card.jsx"
+
 export default function Recipes(){
     const apiKey= data.apiKey;
     const api = axios.create({
@@ -44,9 +44,8 @@ export default function Recipes(){
 
     return (
         <div>
-            <h1></h1>
+            <h3 className=" font-semibold">Trending recipes</h3>
             <Carosaul recipes={random}/>            
-            <p>recipes</p>
         </div>
     )
 }
