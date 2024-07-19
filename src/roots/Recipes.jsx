@@ -3,14 +3,17 @@ import Carosaul from "../components/Recipes/Carosaul.jsx"
 import axios from 'axios'
 import {data} from '../data/data.js'
 import { useEffect } from "react"
+import Card from "../components/Recipes/Card.jsx"
 export default function Recipes(){
     const apiKey= data.apiKey;
     const api = axios.create({
         baseURL: 'https://api.spoonacular.com'
     })
+    
     const [random, setRandom] = useState([]); 
+
     useEffect(() => {
-        api.get('/recipes/random?apiKey='+apiKey+'&number=2')
+        api.get('https://api.spoonacular.com/recipes/random?apiKey='+apiKey+'&number=2')
         .then((res)=>{
             setRandom(res.data.recipes)
             console.log(random);
@@ -41,13 +44,9 @@ export default function Recipes(){
 
     return (
         <div>
-            {/* <button className="btn" onClick={getRandomRecipes}>click me</button> */}
-            <Carosaul recipes={random}/>
+            <h1></h1>
+            <Carosaul recipes={random}/>            
             <p>recipes</p>
-            
-            {/* {random.map((r)=>{
-                <p>{r.title}</p>
-            })} */}
         </div>
     )
 }
